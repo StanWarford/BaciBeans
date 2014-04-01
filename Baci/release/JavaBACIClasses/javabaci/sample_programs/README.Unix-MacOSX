@@ -1,0 +1,78 @@
+                                                June, 2007
+
+
+   Thank you for your interest in the JavaBACI concurrency 
+toolkit.
+
+   To help you get started, we are providing you with a pair
+sample programs, "c-increment.cm",  in C--, the C source language of
+the BACI system, and "p-increment.pm" in the BACI Pascal
+source language.
+
+   Before you compile these program, you need to make sure that
+the javabaci script in the scripts directory is in your PATH
+variable.  This variable is a list of directories that the 
+operating system searches to find a script or an executable.
+As mentioned in one of the JavaBACI installation dialogs, you
+can list your PATH variable by typing "echo $PATH" in a
+terminal window.  The "javabaci" script from the scripts
+directory has to be in a directory in your PATH variable, eitherr
+by adding the scripts directory to your PATH variable, or moving
+the "javabaci" script to one of the directories already in
+your PATH variable.
+
+   Once you have done this, to compile the sample C-- program 
+c-increment.cm into PCODE, type:
+
+      javabaci bacc c-increment
+
+You should then see the following lines appear:
+
+      Pcode and tables are stored in c-increment.pco
+      Compilation listing is stored in c-increment.lst
+
+   Then, to execute the "c-increment.pco" file with the command-line
+interpreter, type:
+
+      javabaci bainterp c-increment
+
+If you prefer to use the JavaBACI PCODE interpreter with
+a GUI interface, then type:
+
+      javabaci bagui c-increment
+
+   If you prefer Pascal to C--, then you can use the JavaBACI Pascal
+compiler to compile the sample Pascal program p-increment.pm into
+PCODE by typing:
+
+      javabaci bapas p-increment
+
+You should then see the following lines appear:
+
+      Pcode and tables are stored in p-increment.pco
+      Compilation listing is stored in p-increment.lst
+
+   To execute this PCODE file with one of the JavaBACI PCODE
+interpreters, type 
+
+      javabaci bainterp p-increment
+
+or
+
+      javabaci bagui p-increment
+
+   If, after you see these programs execute, you are particulary
+curious about how the "c-increment.pco" file is related to the
+"increment.cm" file, then you can use the JavaBACI PCODE disassembler
+by typing:
+
+      javabaci badis c-increment.pco
+
+You can disassemble the p-increment.pco file in a similar manner.   
+
+
+   Thanks again for your interest in JavaBACI.
+
+         
+                              Bill Bynum, bynum@cs.wm.edu
+                              Tracy Camp, tcamp@mines.edu 

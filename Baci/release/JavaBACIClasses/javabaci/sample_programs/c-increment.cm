@@ -1,0 +1,22 @@
+// Increment program from the BACI C-- User's Guide
+const int m = 5;        // the number of times for each thread to increment
+
+int n;                  // the global to be incremented
+
+   /* the threads that increment the global */
+   void incr(char id) 
+   {
+      int i;
+      for (i = 1; i <= m; i++) {
+         n = n + 1;
+         cout << id << "  n = " << n << "  i = " << i << ' ' << id << endl;
+      }
+   }  //  incr
+
+main()
+{  
+   n = 0;
+   cobegin { incr( 'A' ); incr( 'B' ); incr( 'C' ); }
+   cout <<  "The sum is " << n << endl;
+}
+

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+OpenIDE-Module: edu.pepperdine.modules.baci
+OpenIDE-Module-Localizing-Bundle: edu/pepperdine/modules/baci/Bundle.properties
+OpenIDE-Module-Requires: 
+  BuildActions,
+  cnb.org.netbeans.modules.terminal,
+  org.openide.windows.IOProvider
+OpenIDE-Module-Specification-Version: 1.0
+
